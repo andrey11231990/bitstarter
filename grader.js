@@ -72,7 +72,7 @@ if(require.main == module) {
          .parse(process.argv);
 if (program.url != null)
 {
-var urlAsString=urltoString(program.url);
+var urlAsString=program.url;
 rest.get(urlAsString).on('complete',function(result){
 if (result instanceof Error){
 sys.puts('Error: ' + result.message);
